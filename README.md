@@ -10,7 +10,7 @@ I'd also enjoy the ability to sort by a variety of parameters (type)
 
 Solution:
 ------------
-#Construction Zone#
+*Construction Zone*
 
 The application has a main function that decodes the json representation of the data that we require.
 
