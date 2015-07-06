@@ -24,16 +24,17 @@ what makes sense as default or for user.
 Trade-offs
 ------------
 
-As this was quick and dirty (for now), no rich front-end experience or complex folder structure splitting out all the functions for webscale. 
+As this was quick and dirty (for now), no rich front-end experience or complex folder structure splitting out all the functions for webscale.
 Simple Go templating and a few functions in a main package.
 
-A look at the socialpoll example (influenced by an exercise in a golang book) in my github repo shows what a golang project
-that is far more fleshed out would look like.
+At this point I'm just levering standard libraries, though one big level up would be wrapping access to the api in a goroutine for concurrent access.
+I'd also want to add a per-user lock (mutex) on their ability to filter queries as I don't want to exhaust the google api limits.
 
 Missing:
 ------------
 
-Tests! In the middle of figureing out Golang testing conventions, but will be testing the following cases:
+Tests! In the middle of figuring out Golang testing conventions, but will be testing the following cases:
+
 1. A valid request to the server results in a well-formed response (200) or an http error (404)
 2. If the server responds with 200, it returns a slice of structs of type Facility.
 3. That queries about the data set the correct url params in the request from server to server
@@ -42,6 +43,8 @@ Tests! In the middle of figureing out Golang testing conventions, but will be te
 Misc
 ------------
 
-Link to other code I'm proud of: some haskell stuff, but I really need to open source more.
+Link to other code I'm proud of: Most of my work is private and owned by others. www.github.com/rargulati for some dabblings.
+<br />
 Link to resume: www.angel.co/rargulati && www.linkedin.com/in/rargulati
+<br />
 Link to app: forthcoming
