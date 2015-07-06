@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>SF Food Trucks</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+    <div class="loader">
+      <img src="loading.gif" />
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>In or near</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter location or address">
+          </div>
+          <button type="submit" class="btn btn-primary">Show the trucks!</button>
+
+          <div id="">
+            <div class="panel panel-default">
+
+              <div class="panel-heading">
+                <h3 class="panel-title">Trucks in this location</h3>
+              </div>
+
+              <div class="panel-body">
+                <div class="row">
+
+                  <div class="col-md-8">
+                    <div id="map"></div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <ol id="info"></ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyA_6fKJLqluIwfvIzdAa5bHZgbapHdsL1s"></script>
+    <script type="text/javascript" src="/app.js"></script>
+    <script></script>
+  </body>
+</html>
